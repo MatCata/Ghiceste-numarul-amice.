@@ -10,6 +10,13 @@ namespace Guess_the_Number
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("And the next contender is: ");
+
+            string nume = Console.ReadLine();
+
+            Console.WriteLine("Let the game begin", nume);
+
+
             Random r = new Random();
 
             int nc = r.Next(0, 100);
