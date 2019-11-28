@@ -10,13 +10,15 @@ namespace Guess_the_Number
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("And the next contender is: ");
-
-            string nume = Console.ReadLine();
-
-            Console.WriteLine("Let the game begin", nume);
-
-
+            Console.WriteLine("Nume Participant: ");
+            
+                string nume = Console.ReadLine();
+            
+            Console.WriteLine("Initializare GOTY", nume);
+            Console.WriteLine("3");
+            Console.WriteLine("2");
+            Console.WriteLine("1");
+            Console.WriteLine("Start");
             Random r = new Random();
 
             int nc = r.Next(0, 100);
@@ -41,16 +43,16 @@ namespace Guess_the_Number
                 }
                 else if (nr == nc)
                 {
-                    Console.WriteLine("Felicitari, ai primit medalia de aur :D");
+                    Console.WriteLine("Felicitari , ai primit medalia de aur :D");
                     victorie = true;
                 }
                 Console.WriteLine();
             } while (victorie == false);
 
-            Console.WriteLine("The End, To Be Continued....");
-            Console.Write("Press any key to close the game.");
+            Console.WriteLine("Joc incheiat, va urma....");
+            Console.Write("Apasa orice tasta pentru a inchide jocul.");
             Console.ReadKey(true);
-
+           
         }
     }
 }
